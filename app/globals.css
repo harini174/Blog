@@ -1,3 +1,4 @@
+/* Global reset and base styles */
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@ body {
   font-family: sans-serif;
 }
 
+/* Blog listing styles */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -26,7 +28,7 @@ body {
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 8px var(--hover-shadow);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .image {
@@ -42,6 +44,7 @@ h3 {
   margin: 10px 0;
 }
 
+/* Blog Detail Page */
 .detail-container {
   padding: 20px;
   max-width: 600px;
