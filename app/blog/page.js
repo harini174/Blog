@@ -6,6 +6,10 @@ import { useBlogs } from '@/context/BlogContext';
 export default function Blog() {
   const { blogs } = useBlogs();
 
+  if (!blogs || blogs.length === 0) {
+    return <p>Loading blogs or none available</p>;
+  }
+
   return (
     <div className="container">
       {blogs.map((blog) => (
